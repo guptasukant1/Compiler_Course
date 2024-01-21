@@ -1,0 +1,263 @@
+{
+	"files.associations": {
+		"*.cpp": "cpp",
+		"stdio.h": "c",
+		"iostream": "cpp",
+		"stdc++": "cpp",
+		"bits": "cpp",
+		"bits/stdc++": "cpp",
+		"interest.h": "c",
+		"*.tcc": "cpp",
+		"ostream": "cpp",
+		"iosfwd": "cpp",
+		"typeindex": "cpp",
+		"typeinfo": "cpp",
+		"fstream": "cpp",
+		"process.h": "c",
+		"string": "cpp",
+		"crtdefs.h": "c",
+		"_mingw_print_push.h": "c",
+		"random": "c",
+		"functional": "c",
+		"valarray": "c",
+		"any": "cpp",
+		"array": "cpp",
+		"atomic": "cpp",
+		"barrier": "cpp",
+		"bit": "cpp",
+		"bitset": "cpp",
+		"cctype": "cpp",
+		"cfenv": "cpp",
+		"charconv": "cpp",
+		"chrono": "cpp",
+		"cinttypes": "cpp",
+		"clocale": "cpp",
+		"cmath": "cpp",
+		"codecvt": "cpp",
+		"compare": "cpp",
+		"complex": "cpp",
+		"concepts": "cpp",
+		"condition_variable": "cpp",
+		"coroutine": "cpp",
+		"csetjmp": "cpp",
+		"csignal": "cpp",
+		"cstdarg": "cpp",
+		"cstddef": "cpp",
+		"cstdint": "cpp",
+		"cstdio": "cpp",
+		"cstdlib": "cpp",
+		"cstring": "cpp",
+		"ctime": "cpp",
+		"cuchar": "cpp",
+		"cwchar": "cpp",
+		"cwctype": "cpp",
+		"deque": "cpp",
+		"forward_list": "cpp",
+		"list": "cpp",
+		"map": "cpp",
+		"set": "cpp",
+		"unordered_map": "cpp",
+		"unordered_set": "cpp",
+		"vector": "cpp",
+		"exception": "cpp",
+		"expected": "cpp",
+		"algorithm": "cpp",
+		"iterator": "cpp",
+		"memory": "cpp",
+		"memory_resource": "cpp",
+		"numeric": "cpp",
+		"optional": "cpp",
+		"ratio": "cpp",
+		"regex": "cpp",
+		"source_location": "cpp",
+		"string_view": "cpp",
+		"system_error": "cpp",
+		"tuple": "cpp",
+		"type_traits": "cpp",
+		"utility": "cpp",
+		"future": "cpp",
+		"initializer_list": "cpp",
+		"iomanip": "cpp",
+		"istream": "cpp",
+		"latch": "cpp",
+		"limits": "cpp",
+		"mutex": "cpp",
+		"new": "cpp",
+		"numbers": "cpp",
+		"ranges": "cpp",
+		"scoped_allocator": "cpp",
+		"semaphore": "cpp",
+		"shared_mutex": "cpp",
+		"span": "cpp",
+		"spanstream": "cpp",
+		"sstream": "cpp",
+		"stacktrace": "cpp",
+		"stdexcept": "cpp",
+		"stop_token": "cpp",
+		"streambuf": "cpp",
+		"syncstream": "cpp",
+		"thread": "cpp",
+		"variant": "cpp",
+		"format": "cpp",
+		"stdfloat": "cpp",
+		"cfloat": "cpp",
+		"climits": "cpp",
+		"execution": "cpp"
+	},
+	"cmake.configureOnOpen": true,
+	"C_Cpp.errorSquiggles": "enabledIfIncludesResolve",
+	"workbench.startupEditor": "none",
+	"workbench.editor.restoreViewState": false,
+	"workbench.localHistory.enabled": false,
+	"editor.formatOnSave": true,
+	"[html]": {
+		"editor.defaultFormatter": "vscode.html-language-features"
+	},
+	"[css]": {
+		"editor.defaultFormatter": "biomejs.biome"
+	},
+	"[java]": {
+		"editor.defaultFormatter": "redhat.java"
+	},
+
+	"editor.codeLens": true,
+	"diffEditor.codeLens": true,
+	"editor.quickSuggestionsDelay": 0,
+	"editor.formatOnType": true,
+	"editor.formatOnPaste": true,
+	"breadcrumbs.enabled": false,
+	"editor.rename.enablePreview": true,
+	"workbench.editor.enablePreview": false,
+	"editor.fontLigatures": false,
+	// "editor.defaultFormatter": "esbenp.prettier-vscode",
+	"editor.defaultFormatter": "biomejs.biome",
+	"[cpp]": {
+		"editor.defaultFormatter": "ms-vscode.cpptools"
+	},
+	"java.configuration.runtimes": [
+		{
+			"name": "JavaSE-19",
+			"path": "C:\\Program Files\\Java\\jdk-19"
+		}
+	],
+	"html.format.enable": true,
+	"prettier.tabWidth": 4,
+	"files.trimTrailingWhitespace": true,
+	"prettier.useTabs": true,
+	"editor.fontSize": 21,
+	"terminal.integrated.fontSize": 21,
+	"window.zoomLevel": -2,
+	"prettier.singleAttributePerLine": true,
+	// "terminal.integrated.automationProfile.osx": {},
+	"terminal.integrated.fontWeight": "bold",
+	"terminal.explorerKind": "integrated",
+	"terminal.integrated.defaultProfile.windows": "Windows PowerShell",
+	"css.styleSheets": [
+		{
+			"prettier.singleAttributePerLine": true
+		}
+	],
+	"css.format.braceStyle": "collapse",
+	"editor.minimap.maxColumn": 50,
+	"editor.minimap.side": "left",
+	"code-runner.runInTerminal": true,
+	"files.autoSave": "afterDelay",
+	"java.jdt.ls.vmargs": "-XX:+UseParallelGC -XX:GCTimeRatio=4 -XX:AdaptiveSizePolicyWeight=90 -Dsun.zip.disableMemoryMapping=true -Xmx16G -Xms100m -Xlog:disable",
+	// "livePreview.defaultPreviewPath": "/WebDev/SELF/HTML/First.html",
+	"editor.formatOnSaveMode": "modifications",
+	"better-comments.highlightPlainText": true,
+	"better-comments.multilineComments": true,
+	"better-comments.tags": [
+		{
+			"tag": "!",
+			"color": "#FF2D00",
+			"bold": true,
+			"backgroundColor": "#040912"
+		},
+		{
+			"tag": "?",
+			"color": "#2a50db",
+			"bold": true,
+			"backgroundColor": "#040912"
+		},
+		{
+			"tag": "$",
+			"color": "#1df224",
+			"bold": true,
+			"backgroundColor": "#040912"
+		},
+		{
+			"tag": "/",
+			"color": "#474747",
+			"bold": true,
+			"backgroundColor": "#040912"
+		},
+		{
+			"tag": "todo",
+			"color": "#FF8C00",
+			"bold": true,
+			"backgroundColor": "#040912"
+		},
+		{
+			"tag": "*",
+			// "color": "#6615d1",
+			"color": "#984DEE",
+			"bold": true,
+			"backgroundColor": "#040912"
+		}
+	],
+	// Controls if quick suggestions should show up while typing
+	"editor.quickSuggestions": {
+		"other": true,
+		"comments": false,
+		"strings": false
+	},
+
+	// Controls whether suggestions should be accepted on commit characters. For example, in JavaScript, the semi-colon (`;`) can be a commit character that accepts a suggestion and types that character.
+	"editor.acceptSuggestionOnCommitCharacter": true,
+
+	// Controls if suggestions should be accepted on 'Enter' - in addition to 'Tab'. Helps to avoid ambiguity between inserting new lines or accepting suggestions. The value 'smart' means only accept a suggestion with Enter when it makes a textual change
+	"editor.acceptSuggestionOnEnter": "on",
+
+	// Controls if suggestions should automatically show up when typing trigger characters
+	"editor.suggestOnTriggerCharacters": true,
+
+	// Controls if pressing tab inserts the best suggestion and if tab cycles through other suggestions
+	"editor.tabCompletion": "off",
+
+	// Controls whether sorting favours words that appear close to the cursor
+	"editor.suggest.localityBonus": true,
+
+	// Controls how suggestions are pre-selected when showing the suggest list
+	"editor.suggestSelection": "first",
+
+	// Enable word based suggestions
+	"editor.wordBasedSuggestions": "matchingDocuments",
+
+	// Enable parameter hints
+	"editor.parameterHints.enabled": true,
+	"C_Cpp.default.compilerPath": "C:\\msys64\\mingw64\\bin\\gcc.exe",
+	"C_Cpp.loggingLevel": "Debug",
+	"glassit.alpha": 245,
+	"C_Cpp.files.exclude": {
+
+		"**/.vscode": true,
+		"**/.vs": true
+	},
+	"editor.cursorSmoothCaretAnimation": "on",
+	"workbench.editor.wrapTabs": true,
+	"workbench.editor.highlightModifiedTabs": true,
+	"window.density.editorTabHeight": "default",
+	"workbench.editor.titleScrollbarSizing": "default",
+	"workbench.editor.pinnedTabsOnSeparateRow": true,
+	"python.analysis.autoImportCompletions": true,
+	"python.analysis.typeCheckingMode": "basic",
+	"C_Cpp.vcFormat.indent.namespaceContents": true,
+	"C_Cpp.vcFormat.indent.preserveWithinParentheses": false,
+	"C_Cpp.autocompleteAddParentheses": true,
+	"C_Cpp.default.cStandard": "c17",
+	"C_Cpp.default.intelliSenseMode": "windows-gcc-x64",
+	"C_Cpp.default.cppStandard": "c++20",
+	"C_Cpp.intelliSenseEngineFallback": "enabled",
+
+}
