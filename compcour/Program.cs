@@ -6,7 +6,7 @@ namespace compcour{
         static void Main(string[] args){
             Console.Write("Hello, World!");
             while(true){
-                Console.Write("> ");
+                Console.Write("\n\n> ");
                 Console.Write("Enter the string: ");
                 var line = Console.ReadLine();
 
@@ -16,14 +16,14 @@ namespace compcour{
                 while(true){
                     var token = lexer.NextToken();
                     if (token.Kind == SyntaxKind.EndOfFileToken) break;
-                    Console.WriteLine($"{token.Kind}: '{token.Text}'");
+                    Console.Write($"{token.Kind}: '{token.Text}'");
                     if (token.Value != null) Console.Write($"{token.Value}");
                     Console.WriteLine();
                 }
 
                 if (line == "1 + 2 * 3") Console.Write("7");
                 else{
-                    Console.Write("> ERROR: Invalid Expression");
+                    Console.Write("\n> ERROR: Invalid Expression\n");
                 }
             }
         }
@@ -102,8 +102,7 @@ namespace compcour{
                 var length = _position - start;
 
                 var text = _text.Substring(start, length);
-                int.TryParse(text, out var value);
-                return new SyntaxToken(SyntaxKind.WhiteSpaceToken, start, text, value);
+                return new SyntaxToken(SyntaxKind.WhiteSpaceToken, start, text, null);
             }
 
             if (Current == '+') return new SyntaxToken(SyntaxKind.PlusToken, _position++, "+", null);
