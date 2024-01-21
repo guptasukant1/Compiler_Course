@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("compcour")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7c242245e933078279c592a7271706fa1b1acafe")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+db5bfc9f682ea47cc3224e38f3b84a77fe87839c")]
 [assembly: System.Reflection.AssemblyProductAttribute("compcour")]
 [assembly: System.Reflection.AssemblyTitleAttribute("compcour")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
