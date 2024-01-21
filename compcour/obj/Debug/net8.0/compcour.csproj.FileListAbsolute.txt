@@ -1,0 +1,15 @@
+C:\Users\hp\compilercourse\compcour\bin\Debug\net8.0\compcour.exe
+C:\Users\hp\compilercourse\compcour\bin\Debug\net8.0\compcour.deps.json
+C:\Users\hp\compilercourse\compcour\bin\Debug\net8.0\compcour.runtimeconfig.json
+C:\Users\hp\compilercourse\compcour\bin\Debug\net8.0\compcour.dll
+C:\Users\hp\compilercourse\compcour\bin\Debug\net8.0\compcour.pdb
+C:\Users\hp\compilercourse\compcour\obj\Debug\net8.0\compcour.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\hp\compilercourse\compcour\obj\Debug\net8.0\compcour.AssemblyInfoInputs.cache
+C:\Users\hp\compilercourse\compcour\obj\Debug\net8.0\compcour.AssemblyInfo.cs
+C:\Users\hp\compilercourse\compcour\obj\Debug\net8.0\compcour.csproj.CoreCompileInputs.cache
+C:\Users\hp\compilercourse\compcour\obj\Debug\net8.0\compcour.sourcelink.json
+C:\Users\hp\compilercourse\compcour\obj\Debug\net8.0\compcour.dll
+C:\Users\hp\compilercourse\compcour\obj\Debug\net8.0\refint\compcour.dll
+C:\Users\hp\compilercourse\compcour\obj\Debug\net8.0\compcour.pdb
+C:\Users\hp\compilercourse\compcour\obj\Debug\net8.0\compcour.genruntimeconfig.cache
+C:\Users\hp\compilercourse\compcour\obj\Debug\net8.0\ref\compcour.dll
