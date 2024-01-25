@@ -184,7 +184,7 @@ namespace compcour{
         }
 
         private SyntaxToken Current => Peek(0);
-        // $ Helps to
+        // $ Helps to move to the next token
     }
 }
 
