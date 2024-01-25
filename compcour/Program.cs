@@ -24,10 +24,10 @@ namespace compcour{
                     Console.WriteLine();
                 }
 
-                if (line == "1 + 2 * 3") Console.Write("7");
-                else{
-                    Console.Write("\n> ERROR: Invalid Expression\n");
-                }
+                // if (line == "1 + 2 * 3") Console.Write("7");
+                // else{
+                //     Console.Write("\n> ERROR: Invalid Expression\n");
+                // }
             }
         }
     }
@@ -42,7 +42,9 @@ namespace compcour{
         OpenParenthesisToken,
         CloseParenthesisToken,
         BadToken,
-        EndOfFileToken
+        EndOfFileToken,
+        NumberExpression,
+        BinaryExpression
     }
 
     class SyntaxToken{
@@ -79,6 +81,7 @@ namespace compcour{
         }
 
         public SyntaxToken NextToken(){
+
             // $ NUMBERS: + - * / whitespace ( )
 
             if(_position >= _text.Length){
@@ -120,6 +123,69 @@ namespace compcour{
 
     }
 
+    // $ Syntax Tree
+    // $ Done to represent the structure of the program
+    abstract class SyntaxNode{
+        public abstract SyntaxKind Kind { get; }
+    }
+
+    // $ Represents a single expression
+    abstract class ExpressionSyntax : SyntaxNode{
+
+    }
+
+    // $ Represents a single number expression
+    sealed class NumberExpressionSyntax : ExpressionSyntax{
+        public NumberExpressionSyntax(SyntaxToken numberToken){
+            NumberToken = numberToken;
+        }
+
+        public override SyntaxKind Kind => SyntaxKind.NumberExpression;
+        public SyntaxToken NumberToken { get; }
+    }
+
+    // $ Represents a binary expression
+    sealed class BinaryExpressionSyntax : ExpressionSyntax{
+        public BinaryExpressionSyntax(ExpressionSyntax left, SyntaxToken operatorToken, ExpressionSyntax right){
+            Left = left;
+            OperatorToken = operatorToken;
+            Right = right;
+        }
+
+        public ExpressionSyntax Left { get; }
+        public SyntaxToken OperatorToken { get; }
+        public ExpressionSyntax Right { get; }
+        public override SyntaxKind Kind => SyntaxKind.BinaryExpression;
+    }
+
+    class Parser{
+
+        private readonly SyntaxToken[] _tokens;
+        private int _position;
+        public Parser(string text){
+            var tokens = new List<SyntaxToken>();
+            var lexer = new Lexer(text);
+            SyntaxToken token;
+            do {
+
+                token = lexer.NextToken();
+
+                if(token.Kind != SyntaxKind.BadToken && token.Kind != SyntaxKind.WhiteSpaceToken){
+                    tokens.Add(token);
+                }
+            } while (token.Kind != SyntaxKind.EndOfFileToken);
+            _tokens = tokens.ToArray();
+        }
+
+        private SyntaxToken Peek(int offset){
+            var index = _position + offset;
+            if (index >= _tokens.Length) return _tokens[_tokens.Length - 1];
+            return _tokens[index];
+        }
+
+        private SyntaxToken Current => Peek(0);
+        // $ Helps to
+    }
 }
 
 
