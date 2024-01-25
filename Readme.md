@@ -1,3 +1,3 @@
-# Comiler
+# Compiler
 
 This repo is a compiler repo
