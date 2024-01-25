@@ -82,7 +82,7 @@ namespace compcour{
             // $ NUMBERS: + - * / whitespace ( )
 
             if(_position >= _text.Length){
-                return new SyntaxToken(SyntaxKind.EndOfFileToken, _position, "\0", "null");
+                return new SyntaxToken(SyntaxKind.EndOfFileToken, _position, "\0", null);
             }
 
             if(char.IsDigit(Current)){
@@ -105,17 +105,17 @@ namespace compcour{
                 var length = _position - start;
 
                 var text = _text.Substring(start, length);
-                return new SyntaxToken(SyntaxKind.WhiteSpaceToken, start, text, "null");
+                return new SyntaxToken(SyntaxKind.WhiteSpaceToken, start, text, null);
             }
 
-            if (Current == '+') return new SyntaxToken(SyntaxKind.PlusToken, _position++, "+", "null");
-            else if (Current == '-') return new SyntaxToken(SyntaxKind.MinusToken, _position++, "-", "null");
-            else if (Current == '*') return new SyntaxToken(SyntaxKind.StarToken, _position++, "*", "null");
-            else if (Current == '/') return new SyntaxToken(SyntaxKind.SlashToken, _position++, "/", "null");
-            else if (Current == '(') return new SyntaxToken(SyntaxKind.OpenParenthesisToken, _position++, "(", "null");
-            else if (Current == ')') return new SyntaxToken(SyntaxKind.CloseParenthesisToken, _position++, ")", "null");
+            if (Current == '+') return new SyntaxToken(SyntaxKind.PlusToken, _position++, "+", null);
+            else if (Current == '-') return new SyntaxToken(SyntaxKind.MinusToken, _position++, "-", null);
+            else if (Current == '*') return new SyntaxToken(SyntaxKind.StarToken, _position++, "*", null);
+            else if (Current == '/') return new SyntaxToken(SyntaxKind.SlashToken, _position++, "/", null);
+            else if (Current == '(') return new SyntaxToken(SyntaxKind.OpenParenthesisToken, _position++, "(", null);
+            else if (Current == ')') return new SyntaxToken(SyntaxKind.CloseParenthesisToken, _position++, ")", null);
 
-            return new SyntaxToken(SyntaxKind.BadToken, _position++, _text.Substring(_position - 1, 1), "null");
+            return new SyntaxToken(SyntaxKind.BadToken, _position++, _text.Substring(_position - 1, 1), null);
         }
 
     }
