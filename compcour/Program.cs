@@ -64,10 +64,10 @@ namespace compcour{
     class Lexer{
 
         private readonly string _text;
-        private int _position;
         public Lexer(string text){
             _text = text;
         }
+        private int _position;
 
         private char Current{
             get{
@@ -135,26 +135,16 @@ namespace compcour{
     }
 
     // $ Represents a single number expression
-    sealed class NumberExpressionSyntax : ExpressionSyntax{
-        public NumberExpressionSyntax(SyntaxToken numberToken){
-            NumberToken = numberToken;
-        }
-
+    sealed class NumberExpressionSyntax(SyntaxToken numberToken) : ExpressionSyntax{
         public override SyntaxKind Kind => SyntaxKind.NumberExpression;
-        public SyntaxToken NumberToken { get; }
+        public SyntaxToken NumberToken { get; } = numberToken;
     }
 
     // $ Represents a binary expression
-    sealed class BinaryExpressionSyntax : ExpressionSyntax{
-        public BinaryExpressionSyntax(ExpressionSyntax left, SyntaxToken operatorToken, ExpressionSyntax right){
-            Left = left;
-            OperatorToken = operatorToken;
-            Right = right;
-        }
-
-        public ExpressionSyntax Left { get; }
-        public SyntaxToken OperatorToken { get; }
-        public ExpressionSyntax Right { get; }
+    sealed class BinaryExpressionSyntax(ExpressionSyntax left, SyntaxToken operatorToken, ExpressionSyntax right) : ExpressionSyntax{
+        public ExpressionSyntax Left { get; } = left;
+        public SyntaxToken OperatorToken { get; } = operatorToken;
+        public ExpressionSyntax Right { get; } = right;
         public override SyntaxKind Kind => SyntaxKind.BinaryExpression;
     }
 
